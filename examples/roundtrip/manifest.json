@@ -1,0 +1,179 @@
+{
+  "actual_findings_sha256": "474f87207689023b37325541d0e2ccaf147678fac25b9165187b6570a572087f",
+  "datacentre": {
+    "ref": "v0.4.6",
+    "variant": "base"
+  },
+  "facility": "demo-datacentre-01",
+  "findings_sha256": "3d83134ae0dab94db65f5f241e5b89df080edaaeff43f0cf27161b269140761f",
+  "pins": {
+    "axis": {
+      "library": "usdAecoAxis",
+      "ref": "v0.1.2",
+      "repo": "usdaeco-axis"
+    },
+    "buildup": {
+      "library": "usdAecoBuildUp",
+      "ref": "v0.2.1",
+      "repo": "usdaeco-buildup"
+    },
+    "cctv": {
+      "library": "usdAecoCctv",
+      "ref": "v0.5.2",
+      "repo": "usdaeco-cctv"
+    },
+    "core": {
+      "library": "usdAeco",
+      "ref": "v0.9.2",
+      "repo": "usdaeco-core"
+    },
+    "datacentre": {
+      "library": "usdaeco-datacentre",
+      "ref": "v0.4.6",
+      "repo": "usdaeco-datacentre"
+    },
+    "ifc": {
+      "library": "usdaeco-ifc",
+      "ref": "v0.2.0",
+      "repo": "usdaeco-ifc"
+    },
+    "pipe": {
+      "library": "usdAecoPipe",
+      "ref": "v0.2.1",
+      "repo": "usdaeco-pipe"
+    },
+    "scenarios": {
+      "library": "usdaeco-scenarios",
+      "ref": "v0.6.0",
+      "repo": "usdaeco-scenarios"
+    },
+    "sync": {
+      "library": "usdAecoSync",
+      "ref": "v0.5.2",
+      "repo": "usdaeco-sync"
+    },
+    "toolchain": {
+      "library": "usdaeco-toolchain",
+      "ref": "v0.3.8",
+      "repo": "usdaeco-toolchain"
+    },
+    "wall": {
+      "library": "usdAecoWall",
+      "ref": "v0.2.1",
+      "repo": "usdaeco-wall"
+    }
+  },
+  "renders": [
+    {
+      "bytes": 358569,
+      "height": 600,
+      "path": "renders/edited_corner.png",
+      "sha256": "27d9a3cc12a7d3b0a6add354d511690af8346669743d93dfff4d40b4d0761c10",
+      "width": 960
+    },
+    {
+      "bytes": 286408,
+      "height": 600,
+      "path": "renders/overview.png",
+      "sha256": "a469773fcd2c68456fe954ea403b15b766b6610ffdbd85e1b056a061104ca718",
+      "width": 960
+    }
+  ],
+  "result": {
+    "bytes": 1967525,
+    "files": [
+      {
+        "bytes": 876,
+        "path": "result/README.md",
+        "sha256": "6c2d8f8b16ebc52642fab67459e00eda08985420724288af1a10a67b4fdc3614"
+      },
+      {
+        "bytes": 1659444,
+        "normalized_sha256": "4ead3b441f3c7b1d889ce6ef6fa6296a93ac20bb96fd8adaee83857e57a799a8",
+        "path": "result/example.usdc",
+        "sha256": "a0da85018813c185e78ede17e6f6e7d1ea152814502fa14d6d1dbd6f7f714bfb"
+      },
+      {
+        "bytes": 971,
+        "path": "result/layers/inputs/cameras.usda",
+        "sha256": "3fee4d30e757bdd77b1630b2f821948f818f659d34f1e417f224a173f7fc4a1e"
+      },
+      {
+        "bytes": 1243,
+        "path": "result/layers/out/presentation.usda",
+        "sha256": "c7466cdad217547787e92436c0e114fba1b414d4bc4c2ac40f1c8292713bc077"
+      },
+      {
+        "bytes": 10640,
+        "path": "result/layers/out/replay/session/derived.usda",
+        "sha256": "ad3baa81753b2393f16a8c73b4ec05a2dee9e5c39dc39756516ab546975dee08"
+      },
+      {
+        "bytes": 605,
+        "path": "result/layers/out/replay/session/diagnostics.revit.usda",
+        "sha256": "f52413718d55866b898ffbb2941235c8e57bd918e3ef9d0d65d382a239580ca0"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/replay/session/intent.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/replay/session/kind.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 5074,
+        "path": "result/layers/out/replay/session/result.revit.usda",
+        "sha256": "dbf8c9735077b9b2831d743b40815b6f268dce252c7473e882469d544270ac5b"
+      },
+      {
+        "bytes": 1122,
+        "path": "result/layers/out/replay/session/stage.usda",
+        "sha256": "123c97a553c0b3e0da03a500db7a4686901f6d8935a1e6e3ab09b7a70de3c5e4"
+      },
+      {
+        "bytes": 1079,
+        "path": "result/layers/out/seed.usda",
+        "sha256": "d2b1dfde99030f11bba25751a6327e259e6d1d5d2c71d09f16a876bc74e762a0"
+      },
+      {
+        "bytes": 286381,
+        "path": "result/vanilla.png",
+        "sha256": "5cac2743332e26964283a4147cedb4199c201b3c175285c01eab03ddd943f492"
+      }
+    ],
+    "normalization": "sdf-usda-v1",
+    "prim_count": 12276,
+    "vanilla": {
+      "bytes": 286381,
+      "height": 600,
+      "path": "result/vanilla.png",
+      "sha256": "5cac2743332e26964283a4147cedb4199c201b3c175285c01eab03ddd943f492",
+      "width": 960
+    }
+  },
+  "source": {
+    "layers": [
+      {
+        "bytes": 332637,
+        "path": "dc.geometry.usdc",
+        "sha256": "d73387613389fda72868152abc29f0ccfcae3f092f274e99bc3fb7b88998ec5c"
+      },
+      {
+        "bytes": 1471556,
+        "path": "dc.semantics.usdc",
+        "sha256": "1d9e6753da91b62fa95f553102f435c56a5ff93d63c2cec4f01d512dd8f1d3cd"
+      },
+      {
+        "bytes": 517,
+        "path": "dc.usda",
+        "sha256": "628b1383ecb57956fd3c39967c68914afa97c3a3d24c7359c05c44b9cdb7abf9"
+      }
+    ],
+    "manifest_sha256": "2e9970f0def8657bb88a9a8b769de7266d1543e5132eacf0d56141c73faf158c",
+    "mode": "pinned",
+    "sha256": "628b1383ecb57956fd3c39967c68914afa97c3a3d24c7359c05c44b9cdb7abf9"
+  }
+}

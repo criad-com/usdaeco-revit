@@ -1,0 +1,35 @@
+#usda 1.0
+(
+    customLayerData = {
+        string "aeco:sync:authoritativeHost" = "revit"
+        string "aeco:sync:document" = "offline-demo-datacentre-01"
+        string "aeco:sync:gapPolicy" = "keepConnected"
+        string "aeco:sync:host" = "revit"
+        string "aeco:sync:protocol" = "1"
+        string "aeco:sync:time" = "2026-01-01T00:00:00+00:00"
+        string "aeco:sync:version" = "9986781f2559b0e41be64b702ee33359c1a436400b0adb992d80a57205681419"
+    }
+    defaultPrim = "demo_datacentre_01"
+    fallbackPrimTypes = {
+        token[] AecoFacility = ["Xform"]
+        token[] AecoFacilityPart = ["Xform"]
+        token[] AecoLevel = ["Xform"]
+        token[] AecoPort = ["Xform"]
+        token[] AecoSite = ["Xform"]
+        token[] AecoSpace = ["Xform"]
+        token[] AecoSyncDiagnostic = ["Scope"]
+        token[] AecoSystem = ["Scope"]
+        token[] AecoZone = ["Scope"]
+    }
+    metersPerUnit = 1
+    subLayers = [
+        @intent.usda@,
+        @diagnostics.revit.usda@,
+        @result.revit.usda@,
+        @derived.usda@,
+        @kind.usda@,
+        @../../seed.usda@
+    ]
+    upAxis = "Z"
+)
+

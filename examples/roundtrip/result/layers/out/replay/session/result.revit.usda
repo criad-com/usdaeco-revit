@@ -1,0 +1,96 @@
+#usda 1.0
+(
+    customLayerData = {
+        string "aeco:sync:adapterVersion" = "Offline source fixture; no native solve"
+        string "aeco:sync:authoritativeHost" = "revit"
+        string[] "aeco:sync:closure" = ["offline-wall", "offline-pipe"]
+        string "aeco:sync:document" = "offline-demo-datacentre-01"
+        string "aeco:sync:gapPolicy" = "keepConnected"
+        string "aeco:sync:host" = "revit"
+        string "aeco:sync:protocol" = "1"
+        string "aeco:sync:time" = "2026-01-01T00:00:00+00:00"
+        string "aeco:sync:version" = "offline-v2"
+    }
+)
+
+over "demo_datacentre_01"
+{
+    over "demo_datacentre_01_Site"
+    {
+        over "demo_datacentre_01"
+        {
+            over "L01_Office"
+            {
+                over "wall_l1_h_010" (
+                    prepend apiSchemas = ["AecoElementAPI", "AecoAxisAPI", "AecoWallAPI", "AecoClassificationAPI:ifc", "AecoHostBindingAPI:revit"]
+                )
+                {
+                    double3 aeco:axis:end = (15, 0, 0)
+                    double3 aeco:axis:start = (0, 0, 0)
+                    string aeco:host:revit:document = "offline-demo-datacentre-01"
+                    string aeco:host:revit:localRef = "wall"
+                    string aeco:host:revit:ref = "offline-wall"
+                    string aeco:host:revit:version = "offline-element-v2"
+                    string aeco:id = "46bb8ddc-66ac-5ee6-ba2f-72feb5bf8844"
+                    double aeco:wall:height = 3.4
+                    matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, 0, 4, 1) )
+                    uniform token[] xformOpOrder = ["xformOp:transform"]
+                }
+            }
+
+            over "L00_Ground"
+            {
+                over "rt_clg_fws_main_r_Seg_9" (
+                    prepend apiSchemas = ["AecoElementAPI", "AecoAxisAPI", "AecoPipeAPI", "AecoClassificationAPI:ifc", "AecoHostBindingAPI:revit"]
+                )
+                {
+                    double3 aeco:axis:end = (0, 0, 1.7999999999999972)
+                    double3 aeco:axis:start = (0, 0, 0)
+                    string aeco:host:revit:document = "offline-demo-datacentre-01"
+                    string aeco:host:revit:localRef = "pipe"
+                    string aeco:host:revit:ref = "offline-pipe"
+                    string aeco:host:revit:version = "offline-element-v2"
+                    string aeco:id = "e4b8ed4b-bb06-525a-b907-1cb5c1d03950"
+                    double aeco:pipe:nominalDiameter = 0.25
+                    matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (30.1, 1.5, 4.8999999999999995, 1) )
+                    uniform token[] xformOpOrder = ["xformOp:transform"]
+
+                    over "Port" (
+                        prepend apiSchemas = ["AecoPipePortAPI", "AecoHostBindingAPI:revit"]
+                    )
+                    {
+                        rel aeco:connectedPorts = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/rt_clg_fws_main_r_Bend_2/Port>
+                        uniform token aeco:flowDirection = "sink"
+                        string aeco:host:revit:document = "offline-demo-datacentre-01"
+                        string aeco:host:revit:localRef = ""
+                        string aeco:host:revit:ref = "offline-port-06fc2be1-e9cc-54bf-9a99-6353c666e754"
+                        string aeco:host:revit:version = "offline-v2"
+                        string aeco:id = "06fc2be1-e9cc-54bf-9a99-6353c666e754"
+                        uniform token aeco:medium = "pipe"
+                        double aeco:pipePort:nominalDiameter = 0.25
+                        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+                        uniform token[] xformOpOrder = ["xformOp:transform"]
+                    }
+
+                    over "Port_3c316e" (
+                        prepend apiSchemas = ["AecoPipePortAPI", "AecoHostBindingAPI:revit"]
+                    )
+                    {
+                        rel aeco:connectedPorts = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/rt_clg_fws_main_r_Tap_clg_fwp_3/Port_d89075>
+                        uniform token aeco:flowDirection = "source"
+                        string aeco:host:revit:document = "offline-demo-datacentre-01"
+                        string aeco:host:revit:localRef = ""
+                        string aeco:host:revit:ref = "offline-port-3c316ecb-a7f9-55ef-8fb0-14d7667522d7"
+                        string aeco:host:revit:version = "offline-v2"
+                        string aeco:id = "3c316ecb-a7f9-55ef-8fb0-14d7667522d7"
+                        uniform token aeco:medium = "pipe"
+                        double aeco:pipePort:nominalDiameter = 0.25
+                        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 1.7999999999999972, 1) )
+                        uniform token[] xformOpOrder = ["xformOp:transform"]
+                    }
+                }
+            }
+        }
+    }
+}
+

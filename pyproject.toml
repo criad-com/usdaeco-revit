@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usdaeco-revit"
+version = "0.1.4"
+description = "Revit native sync host"
+requires-python = ">=3.11"
+dependencies = ["usdaeco-sync>=0.5,<0.6", "usdaeco-ifc>=0.1,<0.3"]
+
+[project.scripts]
+aeco-revit = "usdaeco_revit.cli:main"
+
+[project.entry-points."aeco_sync.hosts"]
+revit = "usdaeco_revit.host:RevitHost"
+
+[tool.setuptools.packages.find]
+where = ["tools"]
+include = ["usdaeco_revit*"]
+
+[tool.setuptools.package-data]
+usdaeco_revit = ["scripts/*.csx", "scripts/*.json", "scripts/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["testenv"]
+markers = ["live: requires AECO_REVIT_ENDPOINT", "native: requires Blender and Bonsai"]

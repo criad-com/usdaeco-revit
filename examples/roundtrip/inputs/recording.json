@@ -1,0 +1,204 @@
+{
+  "date": "2026-09-10",
+  "status": "live-acceptance-pass",
+  "coreVersion": "0.7.2",
+  "mergedBaseTag": "v0.2.1",
+  "fullAcceptance": true,
+  "host": {
+    "application": "Autodesk Revit 2027",
+    "build": "27.2.0.39",
+    "documents": 1,
+    "note": "dedicated session holding only the test document; every scenario ran inside a rollback group"
+  },
+  "fixture": {
+    "walls": 2,
+    "pipes": 4,
+    "doors": 1,
+    "ports": 13,
+    "elements": 9
+  },
+  "transport": {
+    "endpoint": "loopback ssh port-forward to the REPL",
+    "scriptPack": "per request, compiled in-process"
+  },
+  "portGuidAgreement": {
+    "matched": 13,
+    "total": 13,
+    "mismatches": []
+  },
+  "cases": {
+    "P-free": {
+      "status": "pass",
+      "accepted": 1,
+      "pending": 0,
+      "requests": 1,
+      "rollbackVerified": true,
+      "diagnosticCodes": [
+        "revit:d876a12e-e296-4caf-9bc4-744238edacc3",
+        "sync:neighbourMoved"
+      ]
+    },
+    "P-conn-keep": {
+      "status": "pass",
+      "accepted": 1,
+      "pending": 0,
+      "requests": 1,
+      "rollbackVerified": true,
+      "diagnosticCodes": [
+        "revit:d876a12e-e296-4caf-9bc4-744238edacc3",
+        "sync:neighbourMoved"
+      ]
+    },
+    "P-size-ok": {
+      "status": "pass",
+      "accepted": 1,
+      "pending": 0,
+      "requests": 1,
+      "rollbackVerified": true,
+      "diagnosticCodes": [
+        "revit:d876a12e-e296-4caf-9bc4-744238edacc3",
+        "sync:neighbourMoved",
+        "revit:portIdentityUnresolved"
+      ]
+    },
+    "P-size-bad": {
+      "status": "pass",
+      "accepted": 0,
+      "pending": 1,
+      "requests": 0,
+      "rollbackVerified": true,
+      "diagnosticCodes": [
+        "pipeSizeNotInTable"
+      ]
+    },
+    "P-disconnect": {
+      "status": "pass",
+      "accepted": 1,
+      "pending": 0,
+      "requests": 1,
+      "rollbackVerified": true,
+      "diagnosticCodes": [
+        "revit:d876a12e-e296-4caf-9bc4-744238edacc3",
+        "sync:neighbourMoved"
+      ]
+    },
+    "W-joined": {
+      "status": "pass",
+      "accepted": 0,
+      "pending": 1,
+      "requests": 0,
+      "rollbackVerified": true,
+      "diagnosticCodes": [
+        "sync:joinedEnd"
+      ]
+    },
+    "W-neighbour": {
+      "status": "pass",
+      "accepted": 1,
+      "pending": 0,
+      "requests": 1,
+      "rollbackVerified": true,
+      "diagnosticCodes": [
+        "revit:d876a12e-e296-4caf-9bc4-744238edacc3",
+        "sync:neighbourMoved"
+      ]
+    },
+    "W-type": {
+      "status": "pass",
+      "accepted": 1,
+      "pending": 0,
+      "requests": 1,
+      "rollbackVerified": true,
+      "diagnosticCodes": [
+        "revit:859b1258-f764-49f0-b57a-0cc2c83aaa8e",
+        "revit:d876a12e-e296-4caf-9bc4-744238edacc3",
+        "sync:neighbourMoved"
+      ]
+    },
+    "W-flip": {
+      "status": "pass",
+      "accepted": 1,
+      "pending": 0,
+      "requests": 1,
+      "rollbackVerified": true,
+      "diagnosticCodes": [
+        "revit:d876a12e-e296-4caf-9bc4-744238edacc3",
+        "sync:neighbourMoved"
+      ]
+    },
+    "W-door": {
+      "status": "pass",
+      "accepted": 0,
+      "pending": 1,
+      "requests": 1,
+      "rollbackVerified": true,
+      "diagnosticCodes": [
+        "revit:c4c5d448-87fb-4622-acff-fdb957172dda",
+        "revit:transactionRolledBack",
+        "revit:d876a12e-e296-4caf-9bc4-744238edacc3"
+      ]
+    },
+    "X-converge": {
+      "status": "pass",
+      "accepted": 3,
+      "pending": 2,
+      "requests": 1,
+      "rollbackVerified": true,
+      "diagnosticCodes": [
+        "sync:derivedAuthored",
+        "sync:joinedEnd",
+        "revit:d876a12e-e296-4caf-9bc4-744238edacc3",
+        "sync:neighbourMoved",
+        "bodyDivergence"
+      ]
+    }
+  },
+  "convergence": {
+    "elements": 11,
+    "driversCompared": 42,
+    "maxDriverError": 0.09999999999999964,
+    "driverDifferences": [],
+    "missingDrivers": [],
+    "missingElements": [],
+    "driverTolerance": 0.0001,
+    "extentTolerance": 0.0001,
+    "volumeRelativeTolerance": 0.01,
+    "volumeAbsoluteTolerance": 1e-06,
+    "driversConverged": true,
+    "maxExtentError": 0.00023161302888130564,
+    "maxVolumeRelativeError": 0.001695158919142756,
+    "joinAdjusted": [
+      {
+        "driver": "axis",
+        "error": 0.09999999999999964,
+        "joinAllowance": [
+          0.0,
+          0.10000000000000002
+        ]
+      },
+      {
+        "driver": "axis",
+        "error": 0.09999999999999964,
+        "joinAllowance": [
+          0.10000000000000002,
+          0.0
+        ]
+      }
+    ],
+    "bodiesCompared": 11
+  },
+  "ifcScenarios": 21,
+  "bonsaiScenarios": 3,
+  "referenceParity": {
+    "compared": 152,
+    "equal": 152,
+    "maxNumericError": 1.19e-07
+  },
+  "source": {
+    "repo": "usdaeco-sync",
+    "ref": "v0.4.5",
+    "artifact": "artifacts/wp6-live-acceptance.json",
+    "sha256": "4610de40f3c3518e2cc6821338fddfdcd6b724a985a2b8ab41813959ad117abe",
+    "contents": "live summary; raw receipts are absent"
+  }
+}

@@ -1,0 +1,41 @@
+#usda 1.0
+(
+    defaultPrim = "demo_datacentre_01"
+    fallbackPrimTypes = {
+        token[] AecoFacility = ["Xform"]
+        token[] AecoFacilityPart = ["Xform"]
+        token[] AecoLevel = ["Xform"]
+        token[] AecoPort = ["Xform"]
+        token[] AecoSite = ["Xform"]
+        token[] AecoSpace = ["Xform"]
+        token[] AecoSystem = ["Scope"]
+        token[] AecoZone = ["Scope"]
+    }
+    metersPerUnit = 1
+    subLayers = [
+        @../../../inputs/source/dist/base/dc.usda@
+    ]
+    upAxis = "Z"
+)
+
+over "demo_datacentre_01"
+{
+    over "demo_datacentre_01_Site"
+    {
+        over "demo_datacentre_01"
+        {
+            over "L00_Ground"
+            {
+                over "rt_clg_fws_main_r_Seg_9" (
+                    prepend apiSchemas = ["AecoPipeTypeAPI"]
+                )
+                {
+                    double[] aeco:pipeType:innerDiameters = [0, 0]
+                    double[] aeco:pipeType:nominalDiameters = [0.2, 0.25]
+                    double[] aeco:pipeType:outerDiameters = [0.2, 0.25]
+                }
+            }
+        }
+    }
+}
+

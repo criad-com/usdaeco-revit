@@ -1,0 +1,32 @@
+[
+  {
+    "mode": "archived-live-summary-audit",
+    "cases": 11,
+    "driversCompared": 42,
+    "elements": 11,
+    "driverDifferences": 0,
+    "liveStatus": "NOT RUN",
+    "rawReceiptReplay": "NOT PROVEN"
+  },
+  {
+    "mode": "offline-facility-receipt-replay",
+    "accepted": 2,
+    "driverDifferences": 0,
+    "repeatMutations": 0,
+    "nativeMutations": 0,
+    "driversCompared": 14,
+    "bodiesCompared": 2,
+    "sourceCounts": {
+      "elements": 2954,
+      "levels": 2,
+      "meshes": 2987,
+      "ports": 6212,
+      "spaces": 33,
+      "unclassified": 2,
+      "unparented": 0
+    },
+    "sourcePrimCount": 12266,
+    "matchedIdentities": 2,
+    "liveStatus": "NOT RUN"
+  }
+]

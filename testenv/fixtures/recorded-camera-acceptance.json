@@ -1,0 +1,2175 @@
+{
+  "generatorVersion": [
+    0,
+    2,
+    1
+  ],
+  "syncVersion": [
+    0,
+    4,
+    1
+  ],
+  "fullLiveAcceptance": 1,
+  "live": {
+    "cases": 12,
+    "passed": 12,
+    "nativeRequests": 10,
+    "nativeRollbacksVerified": 10,
+    "zeroCallRefusals": 2,
+    "repeatMutations": 0,
+    "elapsedSecondsFromFileTimestamps": 553.118504524231
+  },
+  "cases": {
+    "C-create": {
+      "passed": 1,
+      "requests": 1,
+      "rollbackVerified": 1,
+      "pending": 0,
+      "warnings": 464
+    },
+    "C-move": {
+      "passed": 1,
+      "requests": 1,
+      "rollbackVerified": 1,
+      "pending": 0,
+      "warnings": 464
+    },
+    "C-pan-tilt": {
+      "passed": 1,
+      "requests": 1,
+      "rollbackVerified": 1,
+      "pending": 0,
+      "warnings": 464
+    },
+    "C-zoom-clamped": {
+      "passed": 1,
+      "requests": 0,
+      "rollbackVerified": 1,
+      "pending": 1,
+      "warnings": 0
+    },
+    "C-preset": {
+      "passed": 1,
+      "requests": 1,
+      "rollbackVerified": 1,
+      "pending": 0,
+      "warnings": 464
+    },
+    "C-type-swap": {
+      "passed": 1,
+      "requests": 1,
+      "rollbackVerified": 1,
+      "pending": 0,
+      "warnings": 464
+    },
+    "C-delete": {
+      "passed": 1,
+      "requests": 1,
+      "rollbackVerified": 1,
+      "pending": 0,
+      "warnings": 464
+    },
+    "C-derived-authored": {
+      "passed": 1,
+      "requests": 0,
+      "rollbackVerified": 1,
+      "pending": 1,
+      "warnings": 0
+    },
+    "X-converge-cctv": {
+      "passed": 1,
+      "requests": 1,
+      "rollbackVerified": 1,
+      "pending": 0,
+      "warnings": 464
+    },
+    "D-live-nested-create": {
+      "passed": 1,
+      "requests": 1,
+      "rollbackVerified": 1,
+      "pending": 0,
+      "warnings": 464
+    },
+    "D-live-repeat": {
+      "passed": 1,
+      "requests": 1,
+      "rollbackVerified": 1,
+      "pending": 0,
+      "warnings": 464
+    },
+    "D-live-converge-all": {
+      "passed": 1,
+      "requests": 1,
+      "rollbackVerified": 1,
+      "pending": 0,
+      "warnings": 464
+    }
+  },
+  "optics": {
+    "cameras": 29,
+    "converged": 29,
+    "halfAngleCamerasPassed": 29,
+    "halfAngles": 66,
+    "halfAnglesPassed": 66,
+    "radii": 165,
+    "radiiPassed": 165,
+    "missing": 0,
+    "maxHalfAngleError": 1.1102230246251565e-16,
+    "maxRadiusError": 3.552713678800501e-15,
+    "halfAngleTolerance": 0.001,
+    "radiusTolerance": 0.001,
+    "observations": [
+      {
+        "cameraIndex": 0,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.8726646259971647,
+            "native": 0.8726646259971648,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.47996554429844057,
+            "native": 0.47996554429844057,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 40.0,
+            "native": 40,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 24.840492795349242,
+            "native": 24.840492795349245,
+            "error": 3.552713678800501e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 12.320884426493224,
+            "native": 12.320884426493226,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 6.160442213246612,
+            "native": 6.160442213246613,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 6.160442213246612,
+            "native": 6.160442213246613,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 1,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.8726646259971647,
+            "native": 0.8726646259971648,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.47996554429844057,
+            "native": 0.47996554429844057,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 40.0,
+            "native": 40,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 24.840492795349242,
+            "native": 24.840492795349245,
+            "error": 3.552713678800501e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 12.320884426493224,
+            "native": 12.320884426493226,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 6.160442213246612,
+            "native": 6.160442213246613,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 6.160442213246612,
+            "native": 6.160442213246613,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 2,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.8726646259971647,
+            "native": 0.8726646259971648,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.47996554429844057,
+            "native": 0.47996554429844057,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 40.0,
+            "native": 40,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 24.840492795349242,
+            "native": 24.840492795349245,
+            "error": 3.552713678800501e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 12.320884426493224,
+            "native": 12.320884426493226,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 6.160442213246612,
+            "native": 6.160442213246613,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 6.160442213246612,
+            "native": 6.160442213246613,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 3,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.8726646259971647,
+            "native": 0.8726646259971648,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.47996554429844057,
+            "native": 0.47996554429844057,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 40.0,
+            "native": 40,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 24.840492795349242,
+            "native": 24.840492795349245,
+            "error": 3.552713678800501e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 12.320884426493224,
+            "native": 12.320884426493226,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 6.160442213246612,
+            "native": 6.160442213246613,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 6.160442213246612,
+            "native": 6.160442213246613,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 4,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.8726646259971647,
+            "native": 0.8726646259971648,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.47996554429844057,
+            "native": 0.47996554429844057,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 40.0,
+            "native": 40,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 24.840492795349242,
+            "native": 24.840492795349245,
+            "error": 3.552713678800501e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 12.320884426493224,
+            "native": 12.320884426493226,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 6.160442213246612,
+            "native": 6.160442213246613,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 6.160442213246612,
+            "native": 6.160442213246613,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 5,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 6,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 7,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 8,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 9,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 10,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 11,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 12,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 13,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 14,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 15,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 16,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 17,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 18,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 19,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 20,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 21,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 22,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 23,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 24,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 25,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.9075712110370505,
+            "native": 0.9075712110370504,
+            "error": 1.1102230246251565e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.6632251157578446,
+            "native": 0.6632251157578446,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 12.0,
+            "native": 12,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 11.423896961377656,
+            "native": 11.423896961377654,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 5.711948480688828,
+            "native": 5.711948480688827,
+            "error": 8.881784197001252e-16,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 26,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.5305800926062756,
+            "native": 0.5305800926062756,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.3185225884889648,
+            "native": 0.3185225884889648,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 0,
+            "expected": 0.5305800926062756,
+            "native": 0.5305800926062756,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.3185225884889648,
+            "native": 0.3185225884889648,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 27,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.5305800926062756,
+            "native": 0.5305800926062756,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.3185225884889648,
+            "native": 0.3185225884889648,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 0,
+            "expected": 0.5305800926062756,
+            "native": 0.5305800926062756,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.3185225884889648,
+            "native": 0.3185225884889648,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      },
+      {
+        "cameraIndex": 28,
+        "passed": 1,
+        "missing": 0,
+        "comparisons": [
+          {
+            "fieldIndex": 0,
+            "expected": 0.5305800926062756,
+            "native": 0.5305800926062756,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.3185225884889648,
+            "native": 0.3185225884889648,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 0,
+            "expected": 0.5305800926062756,
+            "native": 0.5305800926062756,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.3185225884889648,
+            "native": 0.3185225884889648,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 0,
+            "expected": 0.5305800926062756,
+            "native": 0.5305800926062756,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 1,
+            "expected": 0.3185225884889648,
+            "native": 0.3185225884889648,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 2,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 3,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 4,
+            "expected": 20.0,
+            "native": 20,
+            "error": 0.0,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 5,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          },
+          {
+            "fieldIndex": 6,
+            "expected": 14.474723245410287,
+            "native": 14.474723245410289,
+            "error": 1.7763568394002505e-15,
+            "tolerance": 0.001,
+            "passed": 1
+          }
+        ]
+      }
+    ]
+  }
+}

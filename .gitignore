@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+*.dist-info/
+/out/
+/examples/roundtrip/out/
+/result
+/result-*
+flake.lock
+STEERING.md
+
+/examples/roundtrip/inputs/source

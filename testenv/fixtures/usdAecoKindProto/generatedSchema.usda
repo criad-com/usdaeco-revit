@@ -1,0 +1,105 @@
+#usda 1.0
+
+class "AecoWallAPI"
+{
+    bool aeco:wall:allowJoinAtEnd = 1
+    bool aeco:wall:allowJoinAtStart = 1
+    rel aeco:wall:baseLevel
+    double aeco:wall:baseOffset = 0
+    bool aeco:wall:flipped = 0
+    double aeco:wall:grossSideArea = 0 (
+        aecoDerived = true
+    )
+    double aeco:wall:grossVolume = 0 (
+        aecoDerived = true
+    )
+    double aeco:wall:height = 3
+    bool aeco:wall:isExternal = 0
+    rel aeco:wall:joinAlongPath
+    rel aeco:wall:joinAtEnd
+    rel aeco:wall:joinAtStart
+    uniform token aeco:wall:joinTypeEnd = "auto" (
+        allowedTokens = ["auto", "butt", "miter", "squareOff", "none"]
+    )
+    uniform token aeco:wall:joinTypeStart = "auto" (
+        allowedTokens = ["auto", "butt", "miter", "squareOff", "none"]
+    )
+    bool aeco:wall:loadBearing = 0
+    uniform token aeco:wall:locationLine = "centerline" (
+        allowedTokens = ["centerline", "coreCenterline", "finishFaceExterior", "finishFaceInterior", "coreFaceExterior", "coreFaceInterior"]
+    )
+    bool aeco:wall:roomBounding = 1
+    double aeco:wall:thickness = 0 (
+        aecoDerived = true
+    )
+    rel aeco:wall:topLevel
+    double aeco:wall:topOffset = 0
+}
+
+class "AecoBuildUpAPI"
+{
+    token[] aeco:buildUp:functions = [] (
+        allowedTokens = ["structure", "substrate", "insulation", "finish", "membrane", "other"]
+    )
+    string[] aeco:buildUp:materials = []
+    int[] aeco:buildUp:priorities = []
+    double[] aeco:buildUp:thicknesses = []
+    double aeco:buildUp:totalThickness = 0 (
+        aecoDerived = true
+    )
+}
+
+class "AecoPipeFittingAPI"
+{
+    double aeco:pipeFitting:angle = 0 (
+        aecoDerived = true
+    )
+    double aeco:pipeFitting:bendRadius = 0 (
+        aecoDerived = true
+    )
+    uniform token aeco:pipeFitting:origin = "authored" (
+        allowedTokens = ["authored", "generated"]
+    )
+}
+
+class "AecoPipeTypeAPI"
+{
+    double[] aeco:pipeType:innerDiameters = [] (
+        aecoDerived = true
+    )
+    string aeco:pipeType:material = ""
+    double[] aeco:pipeType:nominalDiameters = [] (
+        aecoDerived = true
+    )
+    double[] aeco:pipeType:outerDiameters = [] (
+        aecoDerived = true
+    )
+    string aeco:pipeType:schedule = ""
+    double aeco:pipeType:workingPressure = 0
+}
+
+class "AecoPipeSystemAPI"
+{
+    string aeco:pipeSystem:fluid = ""
+    double aeco:pipeSystem:fluidTemperature = 0
+}
+
+class "AecoPipePortAPI"
+{
+    uniform token aeco:pipePort:connectionType = "undefined" (
+        allowedTokens = ["undefined", "threaded", "flanged", "welded", "pushFit", "compression", "solvent", "grooved", "other"]
+    )
+    double aeco:pipePort:nominalDiameter = 0
+}
+
+class "AecoPipeAPI"
+{
+    double aeco:pipe:innerDiameter = 0
+    double aeco:pipe:nominalDiameter = 0.05
+    double aeco:pipe:outerDiameter = 0 (
+        aecoDerived = true
+    )
+    string aeco:pipe:sizeLabel = ""
+    double aeco:pipe:slope = 0
+}
+

@@ -1,0 +1,23 @@
+#usda 1.0
+
+def "Renders"
+{
+    def Camera "overview"
+    {
+        float focalLength = 32
+        float horizontalAperture = 36
+        float verticalAperture = 22.5
+        matrix4d xformOp:transform = ( (-0.8371662000158874, 0.5469485840103797, 0, 0), (-0.36174893648454604, -0.5536973517620603, 0.7500379654417378, 0), (0.4102322031523846, 0.627906433396507, 0.6613947765109872, -0), (83, 79.99999999999999, 79.99999999999997, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+
+    def Camera "edited_corner"
+    {
+        float focalLength = 42
+        float horizontalAperture = 36
+        float verticalAperture = 22.5
+        matrix4d xformOp:transform = ( (-0.805055837353368, 0.5931990380498502, 0, 0), (-0.38350803274241757, -0.520475187293281, 0.7629070508483093, 0), (0.4525557286846651, 0.6141827746434741, 0.6465081838352358, -0), (40, 19.000000000000007, 24, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

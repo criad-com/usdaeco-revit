@@ -1,0 +1,955 @@
+[
+  {
+    "id": "P-free",
+    "intent": [
+      [
+        "Pipe 2",
+        "length=2"
+      ]
+    ],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Pipe 2": {
+          "aeco:axis:end": [
+            0,
+            0,
+            2
+          ]
+        }
+      },
+      "derived": {
+        "Pipe 2": {
+          "aeco:axis:length": 2
+        }
+      },
+      "codes": [
+        "ifcopenshell:geometry"
+      ],
+      "residue": []
+    }
+  },
+  {
+    "id": "P-conn-keep",
+    "intent": [
+      [
+        "Pipe 1",
+        "length=2.5"
+      ]
+    ],
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "expect": {
+      "drivers": {
+        "Pipe 1": {
+          "aeco:axis:end": [
+            0,
+            0,
+            2.5
+          ]
+        },
+        "Pipe 2": {
+          "aeco:axis:end": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "derived": {
+        "Pipe 1": {
+          "aeco:axis:length": 2.5
+        },
+        "Pipe 2": {
+          "aeco:axis:length": 1
+        }
+      },
+      "codes": [
+        "sync:neighbourMoved",
+        "ifcopenshell:geometry"
+      ],
+      "residue": []
+    }
+  },
+  {
+    "id": "P-conn-refuse",
+    "policy": "refuse",
+    "intent": [
+      [
+        "Pipe 1",
+        "length=2.5"
+      ]
+    ],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Pipe 1": {
+          "aeco:axis:end": [
+            0,
+            0,
+            2
+          ]
+        }
+      },
+      "derived": {
+        "Pipe 1": {
+          "aeco:axis:length": 2
+        }
+      },
+      "codes": [
+        "sync:constrainedEnd"
+      ],
+      "residue": [
+        "aeco:axis:end"
+      ]
+    }
+  },
+  {
+    "id": "P-conn-disc",
+    "policy": "disconnect",
+    "intent": [
+      [
+        "Pipe 1",
+        "length=2.5"
+      ]
+    ],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Pipe 1": {
+          "aeco:axis:end": [
+            0,
+            0,
+            2.5
+          ]
+        }
+      },
+      "derived": {
+        "Pipe 1": {
+          "aeco:axis:length": 2.5
+        },
+        "Pipe 2": {
+          "aeco:axis:length": 1.5
+        }
+      },
+      "codes": [
+        "sync:disconnected",
+        "ifcopenshell:geometry"
+      ],
+      "residue": [],
+      "links": 0
+    }
+  },
+  {
+    "id": "P-size-ok",
+    "intent": [
+      [
+        "Pipe 1",
+        "diameter=0.065"
+      ]
+    ],
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "expect": {
+      "drivers": {
+        "Pipe 1": {
+          "aeco:pipe:nominalDiameter": 0.065
+        }
+      },
+      "derived": {
+        "Pipe 1": {
+          "aeco:pipe:outerDiameter": 0.065,
+          "aeco:pipe:innerDiameter": 0.059,
+          "aeco:pipe:sizeLabel": "DN65"
+        }
+      },
+      "codes": [
+        "pipePortSizeMismatch",
+        "ifcopenshell:geometry"
+      ],
+      "residue": []
+    }
+  },
+  {
+    "id": "P-size-bad",
+    "intent": [
+      [
+        "Pipe 1",
+        "diameter=0.033"
+      ]
+    ],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Pipe 1": {
+          "aeco:pipe:nominalDiameter": 0.05
+        }
+      },
+      "derived": {
+        "Pipe 1": {
+          "aeco:pipe:outerDiameter": 0.05,
+          "aeco:pipe:sizeLabel": "DN50"
+        }
+      },
+      "codes": [
+        "pipeSizeNotInTable"
+      ],
+      "residue": [
+        "aeco:pipe:nominalDiameter"
+      ]
+    }
+  },
+  {
+    "id": "P-derived",
+    "intent": [],
+    "raw": [
+      [
+        "Pipe 1",
+        "aeco:pipe:outerDiameter",
+        0.09
+      ]
+    ],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Pipe 1": {
+          "aeco:pipe:nominalDiameter": 0.05
+        }
+      },
+      "derived": {
+        "Pipe 1": {
+          "aeco:pipe:outerDiameter": 0.05
+        }
+      },
+      "codes": [
+        "sync:derivedAuthored"
+      ],
+      "residue": [
+        "aeco:pipe:outerDiameter"
+      ]
+    }
+  },
+  {
+    "id": "W-joined",
+    "intent": [
+      [
+        "Wall A",
+        "length=5"
+      ]
+    ],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Wall A": {
+          "aeco:axis:end": [
+            4,
+            0,
+            0
+          ]
+        }
+      },
+      "derived": {
+        "Wall A": {
+          "aeco:axis:length": 4
+        }
+      },
+      "codes": [
+        "sync:joinedEnd"
+      ],
+      "residue": [
+        "aeco:axis:end"
+      ]
+    }
+  },
+  {
+    "id": "W-neighbour",
+    "intent": [
+      [
+        "Wall B",
+        "move=1,0,0"
+      ]
+    ],
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "expect": {
+      "drivers": {
+        "Wall A": {
+          "aeco:axis:end": [
+            5,
+            0,
+            0
+          ]
+        }
+      },
+      "derived": {
+        "Wall A": {
+          "aeco:axis:length": 5,
+          "aeco:wall:grossSideArea": 12
+        }
+      },
+      "codes": [
+        "sync:neighbourMoved"
+      ],
+      "residue": [],
+      "hostCodes": {
+        "bonsai": [
+          "ifcopenshell:geometry",
+          "sync:neighbourMoved"
+        ]
+      }
+    }
+  },
+  {
+    "id": "S-stale",
+    "intent": [
+      [
+        "Pipe 1",
+        "length=2.5"
+      ]
+    ],
+    "stale": true,
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Pipe 1": {
+          "aeco:axis:end": [
+            0,
+            0,
+            2
+          ]
+        }
+      },
+      "derived": {
+        "Pipe 1": {
+          "aeco:axis:length": 2
+        }
+      },
+      "codes": [
+        "sync:staleIntent"
+      ],
+      "residue": [
+        "aeco:axis:end"
+      ]
+    }
+  },
+  {
+    "id": "P-join-angle",
+    "intent": [],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Pipe 1": {
+          "aeco:axis:end": [
+            0,
+            0,
+            1.925
+          ]
+        }
+      },
+      "derived": {
+        "Pipe 2": {
+          "aeco:axis:length": 1.425
+        }
+      },
+      "codes": [
+        "ifcopenshell:geometry"
+      ],
+      "residue": [],
+      "links": 2,
+      "fitting": "BEND"
+    },
+    "baseline": "free-pipes-angle",
+    "relations": [
+      [
+        "Pipe 1/end",
+        "aeco:connectedPorts",
+        [
+          "Pipe 2/start"
+        ]
+      ],
+      [
+        "Pipe 2/start",
+        "aeco:connectedPorts",
+        [
+          "Pipe 1/end"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "P-join-line",
+    "intent": [],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Pipe 1": {
+          "aeco:axis:end": [
+            0,
+            0,
+            1.975
+          ]
+        }
+      },
+      "derived": {
+        "Pipe 2": {
+          "aeco:axis:length": 1.475
+        }
+      },
+      "codes": [
+        "ifcopenshell:geometry"
+      ],
+      "residue": [],
+      "links": 2,
+      "fitting": "CONNECTOR"
+    },
+    "baseline": "free-pipes",
+    "relations": [
+      [
+        "Pipe 1/end",
+        "aeco:connectedPorts",
+        [
+          "Pipe 2/start"
+        ]
+      ],
+      [
+        "Pipe 2/start",
+        "aeco:connectedPorts",
+        [
+          "Pipe 1/end"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "P-disconnect",
+    "intent": [],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Pipe 1": {
+          "aeco:axis:end": [
+            0,
+            0,
+            2
+          ]
+        }
+      },
+      "derived": {
+        "Pipe 1": {
+          "aeco:axis:length": 2
+        }
+      },
+      "codes": [
+        "ifcopenshell:geometry"
+      ],
+      "residue": [],
+      "links": 0
+    },
+    "relations": [
+      [
+        "Pipe 1/end",
+        "aeco:connectedPorts",
+        []
+      ]
+    ]
+  },
+  {
+    "id": "P-move",
+    "intent": [
+      [
+        "Pipe 1",
+        "move=0,1,0"
+      ]
+    ],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Pipe 1": {
+          "aeco:axis:end": [
+            0,
+            0,
+            2
+          ]
+        }
+      },
+      "derived": {
+        "Pipe 2": {
+          "aeco:axis:length": 1.5
+        }
+      },
+      "codes": [
+        "ifcopenshell:geometry"
+      ],
+      "residue": []
+    }
+  },
+  {
+    "id": "W-unjoined",
+    "intent": [
+      [
+        "Wall A",
+        "length=5"
+      ]
+    ],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Wall A": {
+          "aeco:axis:end": [
+            5,
+            0,
+            0
+          ]
+        }
+      },
+      "derived": {
+        "Wall A": {
+          "aeco:axis:length": 5
+        }
+      },
+      "codes": [],
+      "residue": [],
+      "joins": 0
+    },
+    "baseline": "unjoined-walls"
+  },
+  {
+    "id": "W-joined-unjoin",
+    "intent": [
+      [
+        "Wall A",
+        "length=5"
+      ]
+    ],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Wall A": {
+          "aeco:axis:end": [
+            5,
+            0,
+            0
+          ]
+        }
+      },
+      "derived": {
+        "Wall A": {
+          "aeco:axis:length": 5
+        }
+      },
+      "codes": [],
+      "residue": [],
+      "joins": 0
+    },
+    "relations": [
+      [
+        "Wall A",
+        "aeco:wall:joinAtEnd",
+        []
+      ]
+    ]
+  },
+  {
+    "id": "W-type",
+    "intent": [],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Wall A": {
+          "aeco:wall:height": 2.4
+        }
+      },
+      "derived": {
+        "Wall A": {
+          "aeco:wall:thickness": 0.3
+        }
+      },
+      "codes": [],
+      "residue": [],
+      "joins": 1
+    },
+    "baseline": "wall-type",
+    "type": [
+      [
+        "Wall A",
+        "Wall B/type"
+      ]
+    ]
+  },
+  {
+    "id": "W-flip",
+    "intent": [],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Wall A": {
+          "aeco:wall:flipped": true
+        }
+      },
+      "derived": {
+        "Wall A": {
+          "aeco:wall:thickness": 0.2
+        }
+      },
+      "codes": [],
+      "residue": [],
+      "joins": 1
+    },
+    "raw": [
+      [
+        "Wall A",
+        "aeco:wall:flipped",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "W-height-offset",
+    "intent": [],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Wall A": {
+          "aeco:wall:height": 3.0,
+          "aeco:wall:baseOffset": 0.2,
+          "aeco:wall:topOffset": 0.1
+        }
+      },
+      "derived": {
+        "Wall A": {
+          "aeco:wall:grossSideArea": 11.6
+        }
+      },
+      "codes": [],
+      "residue": []
+    },
+    "raw": [
+      [
+        "Wall A",
+        "aeco:wall:height",
+        3.0
+      ],
+      [
+        "Wall A",
+        "aeco:wall:baseOffset",
+        0.2
+      ],
+      [
+        "Wall A",
+        "aeco:wall:topOffset",
+        0.1
+      ]
+    ]
+  },
+  {
+    "id": "W-build-up",
+    "intent": [],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Wall A": {
+          "aeco:wall:height": 2.4
+        }
+      },
+      "derived": {
+        "Wall A": {
+          "aeco:wall:thickness": 0.25
+        }
+      },
+      "codes": [],
+      "residue": [],
+      "joins": 1
+    },
+    "typeRaw": [
+      [
+        "Wall A/type",
+        "aeco:buildUp:thicknesses",
+        [
+          0.25
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "W-join-add",
+    "intent": [],
+    "hosts": [
+      "ifc"
+    ],
+    "expect": {
+      "drivers": {
+        "Wall A": {
+          "aeco:axis:end": [
+            4,
+            0,
+            0
+          ]
+        }
+      },
+      "derived": {
+        "Wall A": {
+          "aeco:axis:length": 4
+        }
+      },
+      "codes": [],
+      "residue": [],
+      "joins": 1
+    },
+    "baseline": "unjoined-walls",
+    "relations": [
+      [
+        "Wall A",
+        "aeco:wall:joinAtEnd",
+        [
+          "Wall B"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "C-move",
+    "family": "camera",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Translate camera and rotate 30 degrees about Z",
+    "expect": {
+      "codes": [],
+      "residue": []
+    }
+  },
+  {
+    "id": "C-pan-tilt",
+    "family": "camera",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Set pan 35 degrees and downward tilt 40 degrees",
+    "expect": {
+      "codes": [],
+      "residue": []
+    }
+  },
+  {
+    "id": "C-zoom-clamped",
+    "family": "camera",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Request focal length above the type maximum",
+    "expect": {
+      "codes": [
+        "cctvOutOfEnvelope"
+      ],
+      "residue": [
+        "aeco:cctvSensor:focalLength"
+      ]
+    }
+  },
+  {
+    "id": "C-preset",
+    "family": "camera",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Edit Preset_1 pan, tilt and focal length",
+    "expect": {
+      "codes": [],
+      "residue": []
+    }
+  },
+  {
+    "id": "C-type-swap",
+    "family": "camera",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Assign an alternate camera type and inherit its pixels",
+    "expect": {
+      "codes": [],
+      "residue": []
+    }
+  },
+  {
+    "id": "C-create",
+    "family": "camera",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Create a level-based camera with catalog optics and a native body",
+    "expect": {
+      "codes": [],
+      "residue": []
+    }
+  },
+  {
+    "id": "C-delete",
+    "family": "camera",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Deactivate camera and remove its native sub-instances",
+    "expect": {
+      "codes": [],
+      "residue": []
+    }
+  },
+  {
+    "id": "C-derived-authored",
+    "family": "camera",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Author stock camera focalLength",
+    "expect": {
+      "codes": [
+        "sync:derivedAuthored"
+      ],
+      "residue": [
+        "focalLength"
+      ]
+    }
+  },
+  {
+    "id": "X-converge-cctv",
+    "family": "camera",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Compare native half-angles and clipped arc radii against derivation",
+    "expect": {
+      "codes": [],
+      "residue": []
+    }
+  },
+  {
+    "id": "D-create",
+    "family": "datacentre",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Publish a camera type and create in a generator-selected space; exact census increases by one camera and one type"
+  },
+  {
+    "id": "D-move",
+    "family": "datacentre",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Move the generator-selected fixed camera; preserve the plan census"
+  },
+  {
+    "id": "D-pan-tilt",
+    "family": "datacentre",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Edit aim on the generator-selected fixed camera; preserve its device frame and plan census"
+  },
+  {
+    "id": "D-focal-refused",
+    "family": "datacentre",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Refuse focal length beyond the selected type envelope; preserve the native file and withdraw intent"
+  },
+  {
+    "id": "D-preset",
+    "family": "datacentre",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Edit a preset selected from the generator contract; preserve the exact preset census"
+  },
+  {
+    "id": "D-type-swap",
+    "family": "datacentre",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Swap to a generator type with overlapping focal envelopes; preserve camera identities"
+  },
+  {
+    "id": "D-delete",
+    "family": "datacentre",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Delete the generator-selected camera; subtract its heads and presets from the plan census"
+  },
+  {
+    "id": "D-repeat-apply",
+    "family": "datacentre",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Apply aim intent once; repeat sends zero mutations"
+  },
+  {
+    "id": "D-converge",
+    "family": "datacentre",
+    "hosts": [
+      "ifc",
+      "bonsai"
+    ],
+    "summary": "Fresh import and derivation reproduce the generator head census and the edited focal length"
+  }
+]

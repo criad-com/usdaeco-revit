@@ -1,0 +1,130 @@
+{
+  "version": "0.1.4",
+  "checks": 52,
+  "failed": 0,
+  "notRun": 1,
+  "structure": {
+    "checks": 29,
+    "failed": 0,
+    "toolchain": "v0.3.8"
+  },
+  "pytest": {
+    "passed": 128,
+    "skipped": 1
+  },
+  "live": {
+    "status": "NOT RUN",
+    "reason": "AECO_REVIT_ENDPOINT is unset"
+  },
+  "coreValidation": {
+    "validators": [
+      "usdAecoValidators:ClassificationChecker",
+      "usdAecoValidators:DerivedExactOnMeshChecker",
+      "usdAecoValidators:DerivedGeometryChecker",
+      "usdAecoValidators:ExactWithoutToleranceChecker",
+      "usdAecoValidators:GroupChecker",
+      "usdAecoValidators:IdentityChecker",
+      "usdAecoValidators:PortConnectivityChecker",
+      "usdAecoValidators:SpatialGrammarChecker"
+    ],
+    "errors": 0,
+    "warnings": 2,
+    "findings": [
+      {
+        "name": "proxyClassified",
+        "message": "/demo_datacentre_01/demo_datacentre_01_Site/Generator_Yard_B/UTIL_B is classified 'IfcBuildingElementProxy.UtilityIntake' \u2014 a proxy says nothing about kind (health metric)."
+      },
+      {
+        "name": "proxyClassified",
+        "message": "/demo_datacentre_01/demo_datacentre_01_Site/Generator_Yard_A/UTIL_A is classified 'IfcBuildingElementProxy.UtilityIntake' \u2014 a proxy says nothing about kind (health metric)."
+      }
+    ],
+    "sourceWarnings": 2,
+    "newWarnings": 0
+  },
+  "roundtrip": [
+    {
+      "cases": 11,
+      "driverDifferences": 0,
+      "driversCompared": 42,
+      "elements": 11,
+      "liveStatus": "NOT RUN",
+      "mode": "archived-live-summary-audit",
+      "rawReceiptReplay": "NOT PROVEN"
+    },
+    {
+      "accepted": 2,
+      "bodiesCompared": 2,
+      "driverDifferences": 0,
+      "driversCompared": 14,
+      "liveStatus": "NOT RUN",
+      "matchedIdentities": 2,
+      "mode": "offline-facility-receipt-replay",
+      "nativeMutations": 0,
+      "repeatMutations": 0,
+      "sourceCounts": {
+        "elements": 2954,
+        "levels": 2,
+        "meshes": 2987,
+        "ports": 6212,
+        "spaces": 33,
+        "unclassified": 2,
+        "unparented": 0
+      },
+      "sourcePrimCount": 12266
+    }
+  ],
+  "result": {
+    "sourcePrims": 12266,
+    "publishedPrims": 12276,
+    "bytes": 1967525,
+    "crateBytes": 1659444,
+    "sourceMode": "pinned",
+    "sourceGenerator": "0.4.2",
+    "sourceRef": "v0.4.6",
+    "ResultStale": "PASS",
+    "retainedSourcePrims": 12266,
+    "addedPrims": 10,
+    "largestUsdaBytes": 10640,
+    "vanilla": {
+      "bytes": 286381,
+      "height": 600,
+      "path": "result/vanilla.png",
+      "sha256": "5cac2743332e26964283a4147cedb4199c201b3c175285c01eab03ddd943f492",
+      "width": 960
+    }
+  },
+  "relocation": {
+    "layout": "consumer and all pinned dependencies at independent nested paths",
+    "checks": 52,
+    "failed": 0,
+    "notRun": 1,
+    "pytest": {
+      "passed": 128,
+      "skipped": 1
+    },
+    "structure": {
+      "checks": 29,
+      "failed": 0
+    },
+    "ResultStale": "PASS",
+    "S29": "PASS",
+    "sourceAliasRecreated": true,
+    "archivedSessionPrims": 12273,
+    "archivedSessionCompositionErrors": 0
+  },
+  "termSweep": {
+    "S25": "PASS",
+    "crate": "PASS",
+    "oldPublicNames": 0
+  },
+  "nix": {
+    "attempts": 1,
+    "command": "nix flake check --offline --no-write-lock-file",
+    "localOverrides": true,
+    "networkSandbox": true,
+    "restrictedUriEvaluation": true,
+    "status": "NOT PROVEN",
+    "reason": "The network sandbox denied access to the Nix daemon socket before evaluation; no build ran."
+  }
+}

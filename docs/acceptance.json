@@ -1,0 +1,278 @@
+{
+  "pytest": {
+    "passed": 119,
+    "skipped": 1
+  },
+  "live": {
+    "status": "NOT RUN",
+    "priorCases": 12,
+    "priorPassed": 12
+  },
+  "roundtrip": [
+    {
+      "cases": 11,
+      "driverDifferences": 0,
+      "driversCompared": 42,
+      "elements": 11,
+      "liveStatus": "NOT RUN",
+      "mode": "archived-live-summary-audit",
+      "rawReceiptReplay": "NOT PROVEN"
+    },
+    {
+      "accepted": 2,
+      "bodiesCompared": 2,
+      "driverDifferences": 0,
+      "driversCompared": 14,
+      "mode": "synthetic-receipt-replay",
+      "nativeMutations": 0,
+      "repeatMutations": 0
+    }
+  ],
+  "coreValidation": {
+    "validators": [
+      "usdAecoValidators:ClassificationChecker",
+      "usdAecoValidators:DerivedExactOnMeshChecker",
+      "usdAecoValidators:DerivedGeometryChecker",
+      "usdAecoValidators:ExactWithoutToleranceChecker",
+      "usdAecoValidators:GroupChecker",
+      "usdAecoValidators:IdentityChecker",
+      "usdAecoValidators:PortConnectivityChecker",
+      "usdAecoValidators:SpatialGrammarChecker"
+    ],
+    "errors": 0,
+    "warnings": 2,
+    "findings": [
+      {
+        "name": "ExactWithoutTolerance",
+        "message": "Exact geometry must declare a positive finite tolerance in metres."
+      },
+      {
+        "name": "ExactWithoutTolerance",
+        "message": "Exact geometry must declare a positive finite tolerance in metres."
+      }
+    ]
+  },
+  "checks": 47,
+  "failed": 0,
+  "version": "0.1.2",
+  "measured": "2026-09-11",
+  "pins": {
+    "toolchain": {
+      "repo": "usdaeco-toolchain",
+      "library": "usdaeco-toolchain",
+      "ref": "v0.3.1"
+    },
+    "core": {
+      "repo": "usdaeco-core",
+      "library": "usdAeco",
+      "ref": "v0.9.1"
+    },
+    "sync": {
+      "repo": "usdaeco-sync",
+      "library": "usdAecoSync",
+      "ref": "v0.5.0"
+    },
+    "datacentre": {
+      "repo": "usdaeco-datacentre",
+      "library": "usdaeco-datacentre",
+      "ref": "v0.4.1"
+    },
+    "scenarios": {
+      "repo": "usdaeco-scenarios",
+      "library": "usdaeco-scenarios",
+      "ref": "v0.3.7"
+    },
+    "cctv": {
+      "repo": "usdaeco-cctv",
+      "library": "usdAecoCctv",
+      "ref": "v0.4.8"
+    },
+    "buildup": {
+      "repo": "usdaeco-buildup",
+      "library": "usdAecoBuildUp",
+      "ref": "v0.1.2"
+    },
+    "wall": {
+      "repo": "usdaeco-wall",
+      "library": "usdAecoWall",
+      "ref": "v0.1.2"
+    },
+    "pipe": {
+      "repo": "usdaeco-pipe",
+      "library": "usdAecoPipe",
+      "ref": "v0.1.2"
+    },
+    "ifc": {
+      "repo": "usdaeco-ifc",
+      "library": "usdaeco-ifc",
+      "ref": "v0.1.0"
+    },
+    "axis": {
+      "repo": "usdaeco-axis",
+      "library": "usdAecoAxis",
+      "ref": "v0.1.0"
+    }
+  },
+  "observations": {
+    "core": {
+      "ref": "v0.9.1",
+      "revision": "ee20aa7e20590d9893d4fbf67a39fb3a0ea782d0"
+    },
+    "sync": {
+      "ref": "v0.5.0",
+      "revision": "f0016e9bc24f9851ade3972380e054abc75c501c"
+    },
+    "ifc": {
+      "ref": "v0.1.0",
+      "revision": "43935df9e059b724f8d1ae3d0ea324dbae7efd29"
+    },
+    "toolchain": {
+      "ref": "v0.3.2",
+      "revision": "362c3a392b37a5d27d876b2e55a3d00d0af798b5",
+      "reason": "MIT-aware S01 and copyright-aware S25; publication code unchanged from v0.3.1"
+    },
+    "packaging": {
+      "wheel": "NOT PROVEN",
+      "entryPoint": "source distribution metadata"
+    },
+    "axis": {
+      "ref": "v0.1.0",
+      "revision": "627dbb5e19ca9070dd123432f2acb46b3ad38f51"
+    },
+    "datacentre": {
+      "ref": "v0.4.1",
+      "revision": "212aab67e06acf6a33aac43b3f241047f79103df"
+    },
+    "cctv": {
+      "ref": "v0.4.8",
+      "revision": "20c569d3ed43cc00513a662be9baa0f018d3c2bf"
+    },
+    "nix": {
+      "attempts": 1,
+      "command": "nix flake check --offline --no-write-lock-file",
+      "status": "input-resolution-failed",
+      "input": "axis",
+      "ref": "v0.1.0",
+      "response": 404
+    },
+    "buildup": {
+      "ref": "v0.1.2",
+      "revision": "8377d0e1e2bcf94435a4c8518e0f3f3e1b32c606"
+    },
+    "wall": {
+      "ref": "v0.1.2",
+      "revision": "09b2993e11d07b96a2492e75c49448153524c8b2"
+    },
+    "pipe": {
+      "ref": "v0.1.2",
+      "revision": "f48a764dacc99c4467b426f3c1bb691c5c783952"
+    }
+  },
+  "result": {
+    "bytes": 74223,
+    "files": [
+      {
+        "bytes": 859,
+        "path": "result/README.md",
+        "sha256": "aae98145fcc312ef5c959a49d714bc90667011102b9b0bdcfbb6546664677d05"
+      },
+      {
+        "bytes": 4399,
+        "normalized_sha256": "1cfe558aa982c8a33da66a35f3f4da413c99351a63e6f3dfc11e16711acad7a8",
+        "path": "result/example.usdc",
+        "sha256": "a29ba65bd1547770cbdb9b727dab37192ee6d2c9e4780a28438a6ec6da938b69"
+      },
+      {
+        "bytes": 549,
+        "path": "result/layers/inputs/cameras.usda",
+        "sha256": "c513ea8818ac1c97fb4ed8d28f90fc73ea6d9a1d80fc9d9cc3441acfb7d2786c"
+      },
+      {
+        "bytes": 500,
+        "path": "result/layers/out/replay/seed/model.usda",
+        "sha256": "8a5d2dee1b0d930fc3052c6f8d46bc742142fa6aab20d619f23b622f38c961e9"
+      },
+      {
+        "bytes": 2972,
+        "path": "result/layers/out/replay/session/derived.usda",
+        "sha256": "64ef9d8941dc9bd74c95b6b6422caf7f517bbfb2b04302e5c931f0ee8045c5ad"
+      },
+      {
+        "bytes": 589,
+        "path": "result/layers/out/replay/session/diagnostics.revit.usda",
+        "sha256": "5a3326938e5cd022b2220c46f8bc9c09101d95e477e6549b856c84899a2f4e1c"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/replay/session/intent.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/replay/session/kind.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 4362,
+        "path": "result/layers/out/replay/session/result.revit.usda",
+        "sha256": "168dae3cf03c358edcec7a4291285ffc22704690f9c5a4e74a8a25c7ff96ed2f"
+      },
+      {
+        "bytes": 867,
+        "path": "result/layers/out/replay/session/stage.usda",
+        "sha256": "59370b769471d0b93e18b1ed58ac81e449926b8c23bf64df888a6d5a74e9b028"
+      },
+      {
+        "bytes": 59036,
+        "path": "result/vanilla.png",
+        "sha256": "2fb684958649e658a8b1b2f30a88c9d5c708d525cb84d0c29050524f90a395d2"
+      }
+    ],
+    "normalization": "sdf-usda-v1",
+    "prim_count": 14,
+    "vanilla": {
+      "bytes": 59036,
+      "height": 800,
+      "path": "result/vanilla.png",
+      "sha256": "2fb684958649e658a8b1b2f30a88c9d5c708d525cb84d0c29050524f90a395d2",
+      "width": 1280
+    }
+  },
+  "renders": [
+    {
+      "bytes": 59078,
+      "height": 800,
+      "path": "renders/edited_corner.png",
+      "sha256": "ebdf912df8a7762224099f8f68d0f9e871dfb777cb0a096e7c934d1d5bf4315b",
+      "width": 1280
+    }
+  ],
+  "source": {
+    "layers": [
+      {
+        "bytes": 470,
+        "path": "model.usda",
+        "sha256": "40ce19b1582abc50570393f2a3a046808e7fb9c90b1309f42e15a1e8a9b08aff"
+      }
+    ],
+    "mode": "override",
+    "sha256": "40ce19b1582abc50570393f2a3a046808e7fb9c90b1309f42e15a1e8a9b08aff"
+  },
+  "structure": {
+    "passed": 28,
+    "applicable": 14,
+    "notApplicable": 14
+  },
+  "termSweep": {
+    "text": "PASS",
+    "decodedCrate": "PASS"
+  },
+  "nix": {
+    "attempts": 1,
+    "command": "nix flake check --offline --no-write-lock-file",
+    "status": "input-resolution-failed",
+    "input": "axis",
+    "ref": "v0.1.0",
+    "response": 404
+  }
+}

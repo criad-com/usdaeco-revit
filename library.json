@@ -1,0 +1,12 @@
+{
+  "name": "usdaeco-revit",
+  "version": "0.1.4",
+  "kind": "integration",
+  "tier": "integration",
+  "licence": "MIT",
+  "requires": {
+    "usdAeco": ">=0.9,<1.0",
+    "usdAecoSync": ">=0.5,<0.6",
+    "usdAecoAxis": ">=0.1,<0.2"
+  }
+}

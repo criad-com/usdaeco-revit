@@ -1,0 +1,87 @@
+[
+  {
+    "elementGuid": "3NXxKOaPjBK8ngCnkuN_vs",
+    "connectorId": "0",
+    "expected": "0_1CNSF7Y072vu7RFYBtFp",
+    "peerGuid": "3NXxKOaPjBK8ngCnkuN_v8",
+    "peerConnectorId": "2"
+  },
+  {
+    "elementGuid": "3NXxKOaPjBK8ngCnkuN_vs",
+    "connectorId": "1",
+    "expected": "0ufjzbOvtbJB8nAerk99kM",
+    "peerGuid": "3NXxKOaPjBK8ngCnkuN_vm",
+    "peerConnectorId": "1"
+  },
+  {
+    "elementGuid": "3NXxKOaPjBK8ngCnkuN_vr",
+    "connectorId": "0",
+    "expected": "1OWwKtmkJ9BGTNn2lZshpQ",
+    "peerGuid": "3NXxKOaPjBK8ngCnkuN_vm",
+    "peerConnectorId": "2"
+  },
+  {
+    "elementGuid": "3NXxKOaPjBK8ngCnkuN_vr",
+    "connectorId": "1",
+    "expected": "0wrymq7gL1C6Tt6udBnC0b"
+  },
+  {
+    "elementGuid": "3NXxKOaPjBK8ngCnkuN_vF",
+    "connectorId": "0",
+    "expected": "2l0HOXbD5flUpatmNIQ6Yy"
+  },
+  {
+    "elementGuid": "3NXxKOaPjBK8ngCnkuN_vF",
+    "connectorId": "1",
+    "expected": "0$SQG8RFED9FJxu5y1eREC",
+    "peerGuid": "3NXxKOaPjBK8ngCnkuN_v8",
+    "peerConnectorId": "1"
+  },
+  {
+    "elementGuid": "3NXxKOaPjBK8ngCnkuN_vD",
+    "connectorId": "0",
+    "expected": "3hc31yraC$Kkiiv9x5xMJg",
+    "peerGuid": "3NXxKOaPjBK8ngCnkuN_v8",
+    "peerConnectorId": "3"
+  },
+  {
+    "elementGuid": "3NXxKOaPjBK8ngCnkuN_vD",
+    "connectorId": "1",
+    "expected": "0fFkoFdycZwDdGwMBZVrAI"
+  },
+  {
+    "elementGuid": "3NXxKOaPjBK8ngCnkuN_vm",
+    "connectorId": "1",
+    "expected": "20Ag5Atjvu2A9B6WeDBQIo",
+    "peerGuid": "3NXxKOaPjBK8ngCnkuN_vs",
+    "peerConnectorId": "1"
+  },
+  {
+    "elementGuid": "3NXxKOaPjBK8ngCnkuN_vm",
+    "connectorId": "2",
+    "expected": "1Da8y1W1yHpWkYKFopHE$8",
+    "peerGuid": "3NXxKOaPjBK8ngCnkuN_vr",
+    "peerConnectorId": "0"
+  },
+  {
+    "elementGuid": "3NXxKOaPjBK8ngCnkuN_v8",
+    "connectorId": "2",
+    "expected": "2D$ZC6rEo8wMA81OmS_gyJ",
+    "peerGuid": "3NXxKOaPjBK8ngCnkuN_vs",
+    "peerConnectorId": "0"
+  },
+  {
+    "elementGuid": "3NXxKOaPjBK8ngCnkuN_v8",
+    "connectorId": "1",
+    "expected": "0tT4hz03IAbCQ$aNaWtOVa",
+    "peerGuid": "3NXxKOaPjBK8ngCnkuN_vF",
+    "peerConnectorId": "1"
+  },
+  {
+    "elementGuid": "3NXxKOaPjBK8ngCnkuN_v8",
+    "connectorId": "3",
+    "expected": "0XDsEAbUnSZt6GeBUH5DBn",
+    "peerGuid": "3NXxKOaPjBK8ngCnkuN_vD",
+    "peerConnectorId": "0"
+  }
+]

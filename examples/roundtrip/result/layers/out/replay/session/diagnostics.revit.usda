@@ -1,0 +1,26 @@
+#usda 1.0
+(
+    customLayerData = {
+        string "aeco:sync:authoritativeHost" = "revit"
+        string "aeco:sync:document" = "offline-demo-datacentre-01"
+        string "aeco:sync:gapPolicy" = "keepConnected"
+        string "aeco:sync:host" = "revit"
+        string "aeco:sync:protocol" = "1"
+        string "aeco:sync:time" = "2026-01-01T00:00:00+00:00"
+        string "aeco:sync:version" = "offline-v2"
+    }
+    fallbackPrimTypes = {
+        token[] AecoSyncDiagnostic = ["Scope"]
+    }
+)
+
+def Scope "Sync"
+{
+    def Scope "Diagnostics"
+    {
+        def Scope "revit"
+        {
+        }
+    }
+}
+
