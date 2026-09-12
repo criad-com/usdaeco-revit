@@ -64,9 +64,9 @@ env -u PYTHONPATH "$AECO_PYTHON" -m pytest -q
 nix flake check
 ```
 
-`AECO_CORE` selects core v0.9.2; `AECO_AXIS_ROOT` selects axis v0.1.2.
+`AECO_CORE` selects core v0.9.5; `AECO_AXIS_ROOT` selects axis v0.1.5.
 Core must precede axis on the plugin path. The three
-kind libraries use their released v0.2.1 plugins. A resident Revit document and its REPL supply native execution.
+kind libraries use their released v0.2.5 plugins. A resident Revit document and its REPL supply native execution.
 Set `USDRECORD` to an OpenUSD usdrecord executable with Embree support; the macOS
 system command may implement a different CLI.
 The check ends with the family `N checks, M failed` line and includes structure lint,
@@ -78,14 +78,15 @@ under ignored out/; it does not install a package or change a dependency checkou
 Flake inputs use public release names. For local source mapping use
 `nix flake check --override-input core "path:$AECO_CORE" --override-input axis "path:$AECO_AXIS_ROOT" --override-input sync "path:$AECO_SYNC_ROOT" --override-input ifc "path:$AECO_IFC_ROOT" --override-input toolchain "path:$TOOLCHAIN_DIR"`
 and override other inputs similarly. See the toolchain’s
-[local input policy](https://github.com/criad-com/usdaeco-toolchain/blob/v0.3.8/docs/repo-conventions.md).
+[local input policy](https://github.com/criad-com/usdaeco-toolchain/blob/v0.3.10/docs/repo-conventions.md).
 Native host availability is separate from Nix evaluation. Both the flake and
 source commands use the committed flat plugin directories; no dependency build
 is needed for the offline example.
 
-The integration retains sync v0.5.2 (its own core/axis loader), CCTV v0.5.2,
-IFC v0.2.0 and scenarios v0.6.0. This patch updates only data centre to v0.4.6
-and toolchain to v0.3.8.
+The integration pins sync v0.5.5, CCTV v0.5.6, IFC v0.2.2, scenarios v0.8.0,
+data centre v0.4.9 and toolchain v0.3.10. The recursive processing toolchain
+input is the public v0.4.0 tag. All eleven family inputs use release tags;
+supported requirement ranges are unchanged.
 Select the pinned toolchain checkout with `TOOLCHAIN_DIR`; exact source revisions
 are recorded in dependencies.json. Historical fixtures retain their original
 versions under its separate `fixtures` section.
@@ -96,7 +97,7 @@ Core `>=0.9,<1.0`, axis `>=0.1,<0.2`, sync `>=0.5,<0.6`; IFC integration supplie
 reader for export convergence.
 Exact tested refs are in [dependencies.json](dependencies.json).
 See the [family board](https://github.com/criad-com/usdaeco-board) and the
-[sync host contract](https://github.com/criad-com/usdaeco-sync/blob/v0.5.2/docs/host-contract.md).
+[sync host contract](https://github.com/criad-com/usdaeco-sync/blob/v0.5.5/docs/host-contract.md).
 
 ## Layout
 
@@ -107,8 +108,8 @@ generated from the family skeleton and checked against its applicable S-rules.
 
 ## Status
 
-Version 0.1.4. See [prior release acceptance](docs/acceptance.md) for archived checks and deviations.
-The source-based acceptance and deviations are in [facility replay verification](docs/facility-replay-verification.md).
+Version 0.1.5. See [prior release acceptance](docs/acceptance.md) for archived checks and deviations.
+The source-based acceptance and deviations are in [public re-pin verification](docs/public-repin-verification.md).
 Live execution remains NOT RUN. The offline recording was regenerated from the pinned
 USD source; native solving, exporter port mapping and export/re-import are NOT PROVEN.
 

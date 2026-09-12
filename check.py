@@ -100,7 +100,7 @@ def main():
                      and not final.GetPrimAtPath('/Model'))
         publication=json.loads((ROOT/'examples/roundtrip/manifest.json').read_text())
         report.check('published pinned base source', publication['source']['mode']=='pinned'
-                     and publication['datacentre']=={'ref':'v0.4.6','variant':'base'})
+                     and publication['datacentre']=={'ref':'v0.4.9','variant':'base'})
         evidence['result']={'sourcePrims':row['sourcePrimCount'],
                             'publishedPrims':sum(1 for _ in final.TraverseAll()),
                             'bytes':publication['result']['bytes']}

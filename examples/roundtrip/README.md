@@ -8,7 +8,7 @@ env -u PYTHONPATH "$AECO_PYTHON" examples/roundtrip/run.py --publish
 usdview examples/roundtrip/result/example.usdc
 ```
 
-The source is the complete `base` publication in data centre v0.4.6, unchanged
+The source is the complete `base` publication in data centre v0.4.9, unchanged
 since its v0.4.2 generator publication. The manifest supplies 2,954 elements,
 33 spaces, two levels, 6,212 ports and 2,987 meshes. The stage has 12,266 source
 prims. Every source prim and identity survives the replay. The result adds
@@ -68,4 +68,4 @@ result, renders and manifest after expected findings match. The gate checks
 freshness, stock composition/rendering, portable review layers and inventory
 hashes. Result size is capped at 10 MB, each USDA at 2 MB, each image at 400 KB
 and 1600 pixels. Current measurements are in
-[verification](../../docs/facility-replay-verification.md).
+[verification](../../docs/public-repin-verification.md).

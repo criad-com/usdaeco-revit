@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.1.5 — 2026-09-12
+
+- public re-pin: toolchain v0.3.10, core v0.9.5, axis v0.1.5, sync v0.5.5,
+  data centre v0.4.9, scenarios v0.8.0, CCTV v0.5.6, build-up/wall/pipe v0.2.5,
+  IFC v0.2.2; processing toolchain v0.4.0 is selected recursively.
+- Record exact tagged source revisions and retain supported requirement ranges.
+- Refresh the round-trip publication and current verification; preserve archived
+  native evidence with its original provenance.
+- Verify 52 checks, 0 failed, 1 not run; 128 tests passed and 1 live test not run;
+  all 29 structure rules pass with the tag-only toolchain.
+- Rebuild the crate and nine archived USD layers byte-identically; retain three
+  committed images after fresh rendering. Only publication provenance changes.
+- Record three public tag lookups and the single interrupted offline Nix build
+  as NOT PROVEN; see the public re-pin verification report.
+
 ## 0.1.4
 
 - Publish the offline wall/pipe receipt replay inside the complete pinned base

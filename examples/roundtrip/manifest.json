@@ -1,7 +1,7 @@
 {
   "actual_findings_sha256": "474f87207689023b37325541d0e2ccaf147678fac25b9165187b6570a572087f",
   "datacentre": {
-    "ref": "v0.4.6",
+    "ref": "v0.4.9",
     "variant": "base"
   },
   "facility": "demo-datacentre-01",
@@ -9,58 +9,69 @@
   "pins": {
     "axis": {
       "library": "usdAecoAxis",
-      "ref": "v0.1.2",
-      "repo": "usdaeco-axis"
+      "ref": "v0.1.5",
+      "repo": "usdaeco-axis",
+      "revision": "ecff1d98bcc45c22fcceefd453374671900793ae"
     },
     "buildup": {
       "library": "usdAecoBuildUp",
-      "ref": "v0.2.1",
-      "repo": "usdaeco-buildup"
+      "ref": "v0.2.5",
+      "repo": "usdaeco-buildup",
+      "revision": "99ac95080bf4d1403d410b356c4645c3f251aa40"
     },
     "cctv": {
       "library": "usdAecoCctv",
-      "ref": "v0.5.2",
-      "repo": "usdaeco-cctv"
+      "ref": "v0.5.6",
+      "repo": "usdaeco-cctv",
+      "revision": "567eb9cbdec045a6581c3f5863ac11a22f46e153"
     },
     "core": {
       "library": "usdAeco",
-      "ref": "v0.9.2",
-      "repo": "usdaeco-core"
+      "ref": "v0.9.5",
+      "repo": "usdaeco-core",
+      "revision": "683adc3280254bc71b396a9c64a359cc708788f4"
     },
     "datacentre": {
       "library": "usdaeco-datacentre",
-      "ref": "v0.4.6",
-      "repo": "usdaeco-datacentre"
+      "ref": "v0.4.9",
+      "repo": "usdaeco-datacentre",
+      "revision": "00ac72998b1a92aa6c9e8422803c3350ca8dab37"
     },
     "ifc": {
       "library": "usdaeco-ifc",
-      "ref": "v0.2.0",
-      "repo": "usdaeco-ifc"
+      "ref": "v0.2.2",
+      "repo": "usdaeco-ifc",
+      "revision": "8eb72e89af15e8642d914948384fe73038cc7817"
     },
     "pipe": {
       "library": "usdAecoPipe",
-      "ref": "v0.2.1",
-      "repo": "usdaeco-pipe"
+      "ref": "v0.2.5",
+      "repo": "usdaeco-pipe",
+      "revision": "12179dfb86e93ec605dd8548d19c50d5671029ee"
     },
     "scenarios": {
       "library": "usdaeco-scenarios",
-      "ref": "v0.6.0",
-      "repo": "usdaeco-scenarios"
+      "ref": "v0.8.0",
+      "repo": "usdaeco-scenarios",
+      "revision": "83de1cdab2b1f26fe7d209d9fb28090447484666"
     },
     "sync": {
       "library": "usdAecoSync",
-      "ref": "v0.5.2",
-      "repo": "usdaeco-sync"
+      "ref": "v0.5.5",
+      "repo": "usdaeco-sync",
+      "revision": "2f13dffb5e29076787e6e9b81a701ce2a0ab7e8a"
     },
     "toolchain": {
       "library": "usdaeco-toolchain",
-      "ref": "v0.3.8",
-      "repo": "usdaeco-toolchain"
+      "ref": "v0.3.10",
+      "repo": "usdaeco-toolchain",
+      "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73"
     },
     "wall": {
       "library": "usdAecoWall",
-      "ref": "v0.2.1",
-      "repo": "usdaeco-wall"
+      "ref": "v0.2.5",
+      "repo": "usdaeco-wall",
+      "revision": "ce4b2fa54bb4c85d495237a93e3c883df9c1e1d6"
     }
   },
   "renders": [
@@ -85,7 +96,7 @@
       {
         "bytes": 876,
         "path": "result/README.md",
-        "sha256": "6c2d8f8b16ebc52642fab67459e00eda08985420724288af1a10a67b4fdc3614"
+        "sha256": "49c290ef2c98a6e6340b3f6594920a20eb52934c751b85c71e00d044da677728"
       },
       {
         "bytes": 1659444,

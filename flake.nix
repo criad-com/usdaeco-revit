@@ -1,26 +1,26 @@
 {
   description = "Revit sync host integration";
   inputs = {
-    toolchain.url = "github:criad-com/usdaeco-toolchain?ref=v0.3.8";
-    core.url = "github:criad-com/usdaeco-core?ref=v0.9.2";
+    toolchain.url = "github:criad-com/usdaeco-toolchain?ref=v0.3.10";
+    core.url = "github:criad-com/usdaeco-core?ref=v0.9.5";
     core.flake = false;
-    axis.url = "github:criad-com/usdaeco-axis?ref=v0.1.2";
+    axis.url = "github:criad-com/usdaeco-axis?ref=v0.1.5";
     axis.flake = false;
-    sync.url = "github:criad-com/usdaeco-sync?ref=v0.5.2";
+    sync.url = "github:criad-com/usdaeco-sync?ref=v0.5.5";
     sync.flake = false;
-    datacentre.url = "github:criad-com/usdaeco-datacentre?ref=v0.4.6";
+    datacentre.url = "github:criad-com/usdaeco-datacentre?ref=v0.4.9";
     datacentre.flake = false;
-    scenarios.url = "github:criad-com/usdaeco-scenarios?ref=v0.6.0";
+    scenarios.url = "github:criad-com/usdaeco-scenarios?ref=v0.8.0";
     scenarios.flake = false;
-    cctv.url = "github:criad-com/usdaeco-cctv?ref=v0.5.2";
+    cctv.url = "github:criad-com/usdaeco-cctv?ref=v0.5.6";
     cctv.flake = false;
-    buildup.url = "github:criad-com/usdaeco-buildup?ref=v0.2.1";
+    buildup.url = "github:criad-com/usdaeco-buildup?ref=v0.2.5";
     buildup.flake = false;
-    wall.url = "github:criad-com/usdaeco-wall?ref=v0.2.1";
+    wall.url = "github:criad-com/usdaeco-wall?ref=v0.2.5";
     wall.flake = false;
-    pipe.url = "github:criad-com/usdaeco-pipe?ref=v0.2.1";
+    pipe.url = "github:criad-com/usdaeco-pipe?ref=v0.2.5";
     pipe.flake = false;
-    ifc.url = "github:criad-com/usdaeco-ifc?ref=v0.2.0";
+    ifc.url = "github:criad-com/usdaeco-ifc?ref=v0.2.2";
     ifc.flake = false;
     nixpkgs.follows = "toolchain/nixpkgs";
   };

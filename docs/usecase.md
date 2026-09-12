@@ -53,7 +53,7 @@ Run `env -u PYTHONPATH "$AECO_PYTHON" examples/roundtrip/run.py` for the complet
 ## 6 The example on the demo data centre
 
 The complete base facility is composed through `inputs/source` from data centre
-v0.4.6. Its unchanged publication was generated at v0.4.2. The source manifest
+v0.4.9. Its unchanged publication was generated at v0.4.2. The source manifest
 supplies the census: 12,266 source prims, 2,954 elements, 33 spaces, two levels,
 6,212 ports and 2,987 meshes. Every source identity and prim is retained.
 
@@ -87,6 +87,6 @@ Native compilation and an installed wheel are separate from the source-based gat
 
 ## 9 Status
 
-Version 0.1.4, using toolchain v0.3.8 and data centre v0.4.6; other pins are unchanged.
-Current results and deviations are in [facility replay verification](facility-replay-verification.md);
+Version 0.1.5, using toolchain v0.3.10 and data centre v0.4.9; all eleven public release pins are recorded in dependencies.json; supported ranges are unchanged.
+Current results and deviations are in [public re-pin verification](public-repin-verification.md);
 [acceptance.md](acceptance.md) preserves earlier release evidence.

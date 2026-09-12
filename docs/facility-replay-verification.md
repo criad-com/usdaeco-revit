@@ -1,5 +1,8 @@
 # Full facility replay verification
 
+Archived v0.1.4 evidence. Current release verification is in
+[public re-pin verification](public-repin-verification.md).
+
 Version 0.1.4 publishes the complete pinned base facility after two offline
 receipt edits. The source and relocated layouts use exact tag exports of all
 11 dependencies. No dependency checkout was modified or built. Detailed

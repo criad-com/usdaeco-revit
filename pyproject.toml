@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "usdaeco-revit"
-version = "0.1.4"
+version = "0.1.5"
 description = "Revit native sync host"
 requires-python = ">=3.11"
 dependencies = ["usdaeco-sync>=0.5,<0.6", "usdaeco-ifc>=0.1,<0.3"]
